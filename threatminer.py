@@ -23,7 +23,15 @@ class threatMiner():
         Available Functions
         - test_connect              Provides a method to test connectivity
         - first_function            This is example text that you can replace to describe a function
-        
+        - get_domain                This function performs lookups against domains depending on the function
+        - get_ip                    This function performs lookups against IPs depending on the function
+        - get_sample                This function performs lookups against hashes depending on the functions
+        - get_imphash               This function performs lookups against imphashes depending on the functions
+        - get_ssdeep                This function performs lookups against ssdeep depending on the functions
+        - get_ssl                   This function performs lookups against ssl depending on the functions
+        - get_email                 This function performs lookups against email depending on the functions
+        - get_av                    This function performs lookups against AV depending on the functions
+
         Usage:
         # Should match your class name.  Delete this line
         s = threatMiner()
@@ -123,7 +131,7 @@ class threatMiner():
 
         :param function: Required - These are the functions that threat miner provide for ip lookups
 
-        Flags
+        Functions
             1 - WHOIS
             2 - Passive DNS
             3 - URIs
@@ -159,7 +167,7 @@ class threatMiner():
 
         :param function: Required - These are the functions that threat miner provide for hash lookups
 
-        Flags
+        Functions
             1 - Metadata
             2 - HTTP Traffic
             3 - Hosts (domains and IPs)
@@ -196,7 +204,7 @@ class threatMiner():
 
         :param function: Required - These are the functions that threat miner provide for imphashes lookups
 
-        Flags
+        Functions
             1 - Metadata
             2 - HTTP Traffic
             3 - Hosts (domains and IPs)
@@ -233,7 +241,7 @@ class threatMiner():
 
         :param function: Required - These are the functions that threat miner provide for ssdeep lookups
 
-        Flags
+        Functions
             1 - Samples
             2 - Report tagging
 
@@ -265,7 +273,7 @@ class threatMiner():
 
         :param function: Required - These are the functions that threat miner provide for ssl lookups
 
-        Flags
+        Functions
             1 - Hosts
             2 - Report tagging
 
@@ -296,7 +304,8 @@ class threatMiner():
         Function:   This function performs lookups against email depending on the functions
 
         :param function: Required - These are the functions that threat miner provide for email lookups
-        Flags
+        
+        Functions
             1 - Domains
 
         Usage:
@@ -326,7 +335,8 @@ class threatMiner():
         Function:   This function performs lookups against AV depending on the functions
 
         :param function: Required - These are the functions that threat miner provide for AV lookups
-        Flags
+        
+        Functions
             1 - Samples
             2 - Report tagging
 
