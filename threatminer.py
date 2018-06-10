@@ -310,7 +310,7 @@ class threatMiner():
 
         Usage:
         s = threatMiner()
-        s.get_email("42a8d5b3a867a59a79f44ffadd61460780fe58f2", 1)
+        s.get_email("7bf5721bfa009479c33f3c3cf4ea5392200f030e", 1)
         """
         # URL that we are querying
         endpoint = '{}/email.php?q={}&rt={}'.format(self.base_url, email, function)
@@ -345,7 +345,7 @@ class threatMiner():
         s.get_av("Trojan.Enfal", 1)
         """
         # URL that we are querying
-        endpoint = '{}/email.php?q={}&rt={}'.format(self.base_url, av, function)
+        endpoint = '{}/av.php?q={}&rt={}'.format(self.base_url, av, function)
         # Create a request
         r = self.session.get(endpoint)
         # Sleep to ensure throttling
